@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 public class AccountModel implements Serializable {
 	
 	

@@ -14,5 +14,6 @@ public interface TransactionService {
 	public List<TransactionModel> getTransactions();
 	public TransactionModel updateTransaction(TransactionModel model);
 	public TransactionModel deleteTransaction(TransactionModel model);
+	
 
 }

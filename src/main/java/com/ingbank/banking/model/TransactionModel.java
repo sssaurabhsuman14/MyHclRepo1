@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 public class TransactionModel implements Serializable{
 
 	private static final long serialVersionUID = 2472533295875578066L;
