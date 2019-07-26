@@ -1,0 +1,13 @@
+
+*.prefs
+*\classes
+*.properties
+*.properties
+.classpath
+.factorypath
+.project
+target/classes/application.properties
+target/classes/META-INF/maven/com.ingbank/banking/pom.properties
+target/classes/application.properties
+target/classes/application.properties
+src/main/resources/application.properties
