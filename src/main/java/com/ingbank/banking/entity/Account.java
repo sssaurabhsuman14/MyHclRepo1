@@ -7,35 +7,31 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Customer implements Serializable{
+public class Account implements Serializable {
 	
-	private static final long serialVersionUID = 1102723228898397097L;
+	private static final long serialVersionUID = 320982071978387864L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long cusId;
+	private Long accId;
 	
-	private String userName;
+	private Double balance;
 	
-	private String email;
+	@ManyToOne
+	Customer customer;
 	
-	private String phoneNumber;
-	
-	@OneToMany(mappedBy = "customer")
-	List<Account> accounts;
-	
-	
-	
+	@OneToMany(mappedBy = "account")
+	List<Transaction> transactions;
 
 }
